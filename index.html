@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <input type="text" placeholder="Search...">
+            <button class="add-customer">+ Add customer</button>
+        </header>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Rate</th>
+                    <th>Balance</th>
+                    <th>Deposit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>Ann Culhane</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status open">Open</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance negative">-$270.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>2</td>
+                    <td>Ahmad Rosser</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status paid">Paid</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance positive">$270.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>3</td>
+                    <td>Zain Calzoni</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status open">Open</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance negative">-$20.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>4</td>
+                    <td>Leo Stanton</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status inactive">Inactive</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance positive">$600.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>5</td>
+                    <td>Kaiya Vetrovs</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status open">Open</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance negative">-$350.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>6</td>
+                    <td>Ryan Westervelt</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status paid">Paid</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance positive">$30.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>7</td>
+                    <td>Corey Stanton</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status due">Due</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance negative">-$270.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>8</td>
+                    <td>Addison Aminoff</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status open">Open</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance negative">-$270.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>9</td>
+                    <td>Alfredo Aminoff</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status inactive">Inactive</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance positive">$460.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>10</td>
+                    <td>Vivian Norris</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status open">Open</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance negative">-$100.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>11</td>
+                    <td>Joel Fisher</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</td>
+                    <td><span class="status paid">Paid</td>
+                    <td>$70.00 CAD</td>
+                    <td class="balance positive">$50.00 CAD</td>
+                    <td>$500.00 CAD</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <footer class="footer">
+            <div class="pagination">
+                <span>1-10 of 97</span>
+                <div>
+                    <select>
+                        <option value="10">Rows per page: 10</option>
+                        <option value="20">Rows per page: 20</option>
+                        <option value="50">Rows per page: 50</option>
+                    </select>
+                    <button class="prev-page">‹</button>
+                    <button class="next-page">›</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
